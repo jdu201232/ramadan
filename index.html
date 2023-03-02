@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebPageCover</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <img src="mosque.jpg" class="mosque">
+        <header>
+            <a href="#" class="logo">Ramadan</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#" style="--i:1" class="active">Home</a></li>
+                <li><a href="#" style="--i:2">About</a></li>
+                <li><a href="#" style="--i:3">Calendar</a></li>
+                <li><a href="#" style="--i:4">Blog</a></li>
+                <li><a href="#" style="--i:5">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Happy Ramadan Kareem</h2>
+                <p>Ramazon — hijriy yil hisobining to'qqizinchi oyi. Islom dinida Ramazon oyida Alloh Muhammadga (sollallohu alayhi vassallam) Qur'onni vahiy qilgan deb talqin etiladi. Shu sababli, Ramazon muqaddas oy hisoblanadi, bu oy davomida musulmonlarga ro'za tutish buyuriladi.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
